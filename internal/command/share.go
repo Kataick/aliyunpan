@@ -88,6 +88,8 @@ func CmdShare() cli.Command {
 						et = now.Add(time.Duration(1) * time.Hour * 24).Format("2006-01-02 15:04:05")
 					} else if timeFlag == "2" {
 						et = now.Add(time.Duration(7) * time.Hour * 24).Format("2006-01-02 15:04:05")
+					} else if timeFlag == "3" {
+						et = now.Add(time.Duration(30) * time.Hour * 24).Format("2006-01-02 15:04:05")
 					} else {
 						et = ""
 					}
